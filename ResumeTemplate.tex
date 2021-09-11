@@ -1,0 +1,176 @@
+\documentclass[12pt, letterpaper]{memoir}
+
+%Imports
+\usepackage[top=.5in, left=.5in, right=.5in, bottom=.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{fontspec}
+\usepackage{parcolumns}
+\usepackage{wrapfig}
+\usepackage{fontawesome5}
+\usepackage{lipsum}
+\usepackage{enumitem}
+
+%Setting up fonts of headings and body text
+% YOU WILL NEED TO SPECIFY YOUR OWN FONT PATHS
+\newfontfamily\Lustria[Path = /home/Projects/Lustria/]{Lustria-Regular}
+\setmainfont{Lato}
+
+%Setting up title and section fonts
+\renewcommand{\maketitlehooka}{\Lustria}
+\titleformat*{\section}{\huge\Lustria}
+\titleformat*{\subsection}{\large\Lustria}
+
+%Title creation
+\title{Your Name here}
+\author{}
+\date{}
+
+%Removing page numbering
+\pagenumbering{gobble}
+
+%Creating title format
+\pretitle{%
+	\Huge%
+	\vspace*{-1.5\baselineskip}%
+	\fontsize{50}{60}\selectfont%
+	\noindent
+}%
+
+\posttitle{%
+	\vspace*{.1\baselineskip}%
+	\hline%
+	\vspace*{-1\baselineskip}%
+}%
+
+%Document Body
+\begin{document}
+
+\maketitle
+
+\hspace{-8mm}
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Contact}
+\vspace{-.5\baselineskip}
+\faIcon{envelope} name@yourwebsite.com
+\vspace{.5\baselineskip}
+
+\faIcon{graduation-cap} yournam@yourschool.edu
+\vspace{.5\baselineskip}
+
+\faIcon{phone} [Your Phone Number Here]
+\vspace{.5\baselineskip}
+
+\faIcon{globe} yourwebsite.com
+\vspace{.5\baselineskip}
+
+\faIcon{map-marked-alt} [Your Address Here]
+
+\vspace{.5\baselineskip}
+\section*{Skills}
+\vspace{-.5\baselineskip}
+
+\subsection{Soft}
+\vspace{-.5\baselineskip}
+\begin{itemize}[itemsep=-1mm]
+	\item Your skill here
+	\item Your skill here
+	\item Your skill here
+	\item Your skill here
+	\item Your skill here
+\end{itemize}
+\vspace{-1.75\baselineskip}
+\subsection{Technical}
+\begin{itemize}[itemsep=-1mm]
+	\item Your skill here
+	\item Your skill here
+	\item Your skill here
+	\item Your skill here
+	\item Your skill here
+	\item Your skill here
+	\item Your skill here
+	\item Your skill here
+	\item Your skill here
+	\item Your skill here
+\end{itemize}
+\vspace{-1.75\baselineskip}
+\subsection{Language}
+\begin{itemize}[itemsep=-1mm]
+	\item Your skill here
+	\item Your skill here
+\end{itemize}
+
+
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.675\textwidth}
+\section*{Education}
+\vspace{-.5\baselineskip}
+\textbf{Your College Here} City, State \hspace*{\fill} \textbf{Graduation year}
+
+Whatever you studied
+
+Relevant Courses: Some relevant courses
+
+\vspace{.4\baselineskip}
+
+\textbf{Your Highschool Here} City, State \hspace*{\fill} \textbf{Graduation Year}
+
+GPA: 4.3/4.0 (weighted)
+
+Awards: Whatever you won
+
+Relevant Courses: Courses relevant to your position(if any)
+
+\vspace{.5\baselineskip}
+\section*{Experience}
+\vspace{-.5\baselineskip}
+
+\textbf{Your job} \hspace*{\fill} \textbf{When worked}
+\vspace{-.2\baselineskip}
+\begin{itemize}[itemsep=-1mm]
+	\setlength{\itemindent}{-.2in}
+	\item Your resume bullet point here
+	\item Your resume bullet point here
+	\item Your resume bullet point here
+\end{itemize}
+
+\textbf{Your job} \hspace*{\fill} \textbf{When worked}
+\vspace{-.5\baselineskip}
+\begin{itemize}[itemsep=-1mm]
+	\setlength{\itemindent}{-.2in}
+	\item Your resume bullet point here
+	\item Your resume bullet point here
+	\item Your resume bullet point here
+\end{itemize}
+
+\textbf{Your job} \hspace*{\fill} \textbf{When worked}
+\vspace{-.5\baselineskip}
+\begin{itemize}[itemsep=-1mm]
+	\setlength{\itemindent}{-.2in}
+	\item Your resume bullet point here
+	\item Your resume bullet point here
+\end{itemize}
+
+\vspace{-1.5\baselineskip}
+\section*{Activities}
+\vspace{-.5\baselineskip}
+\textbf{Your Activity} \hspace*{\fill} \textbf{When you did it}
+\vspace{-.5\baselineskip}
+\begin{itemize}[itemsep=-1mm]
+	\item Your resume bullet point here
+	\item Your resume bullet point here
+	\item Your resume bullet point here
+	\item \emph{Awards:} Whatever you won
+\end{itemize}
+
+\textbf{Your Activity} \hspace*{\fill} \textbf{When you did it}
+\vspace{-.5\baselineskip}
+\begin{itemize}[itemsep=-1mm]
+	\item Your resume bullet point here
+	\item \emph{Awards:} Whatever you won
+\end{itemize}
+
+\end{minipage}
+
+\end{document}
